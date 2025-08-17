@@ -1,0 +1,40 @@
+---
+layout: default
+title: "Tags"
+permalink: /tags/
+---
+
+<h1>Tags</h1>
+
+{%- assign pairs = site.tags -%}
+{%- if pairs and pairs.size > 0 -%}
+  <ul class="tag-list">
+    {%- for pair in pairs -%}
+      {%- assign name = pair[0] -%}
+      <li>
+        <a href="#tag-{{ forloop.index0 }}">{{ name }}</a>
+        ({{ pair[1].size }})
+      </li>
+    {%- endfor -%}
+  </ul>
+
+  <hr>
+
+  {%- for pair in pairs -%}
+    {%- assign name = pair[0] -%}
+    {%- assign posts = pair[1] -%}
+    <h2 id="tag-{{ forloop.index0 }}">#{{ name }}</h2>
+    <ul>
+      {%- for post in posts -%}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <small>— {{ post.date | date: "%b %d, %Y" }}</small>
+        </li>
+      {%- endfor -%}
+    </ul>
+  {%- endfor -%}
+{%- else -%}
+  <p>No tags yet.</p>
+{%- endif -%}
+
+

@@ -21,20 +21,27 @@
 title: Crusty Rustacean
 email: crusty.rustacean@hey.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Learning about solving the things in Elixir, Ruby, TypeScript and Rust.
+  Learning about solving the things mostly in Rust...mostly...
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "crustyrustacean.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: crustyrustacean
 github_username: crustyrustacean
-version: 0.2.0
+version: 0.3.0
+header_pages:
+  - about.markdown
+  - contact.markdown
+  - projects.markdown
+  - resources.markdown
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-paginate
-paginate: 5
-paginate_path: "/page:num"
+  - jekyll-sitemap
+  - jekyll-seo-tag
+paginate: 
+paginate_path:
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

@@ -2,7 +2,9 @@
 layout: post
 title:  "The Proverbial First Post"
 date:   2025-08-17 08:41:21 -0700
-categories: meta
+categories: [meta]
+tags: ["author note"]
+
 ---
 Welcome to my yet-again-revitalized blog.
 

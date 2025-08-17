@@ -1,0 +1,41 @@
+---
+layout: default
+title: "Categories"
+permalink: /categories/
+---
+
+<h1>Categories</h1>
+
+{%- assign pairs = site.categories -%}
+{%- if pairs and pairs.size > 0 -%}
+  <ul class="category-list">
+    {%- for pair in pairs -%}
+      {%- assign name = pair[0] -%}
+      <li>
+        <a href="#cat-{{ forloop.index0 }}">{{ name }}</a>
+        ({{ pair[1].size }})
+      </li>
+    {%- endfor -%}
+  </ul>
+
+  <hr>
+
+  {%- for pair in pairs -%}
+    {%- assign name = pair[0] -%}
+    {%- assign posts = pair[1] -%}
+    <h2 id="cat-{{ forloop.index0 }}">{{ name }}</h2>
+    <ul>
+      {%- for post in posts -%}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <small>— {{ post.date | date: "%b %d, %Y" }}</small>
+        </li>
+      {%- endfor -%}
+    </ul>
+  {%- endfor -%}
+{%- else -%}
+  <p>No categories yet.</p>
+{%- endif -%}
+
+
+

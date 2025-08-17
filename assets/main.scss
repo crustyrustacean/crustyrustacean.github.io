@@ -1,0 +1,29 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+/* assets/main.scss */
+.site-subnav {
+  clear: both;            /* <-- forces it below the floated title + nav */
+  margin-top: .5rem;
+  font-size: .9rem;
+}
+
+.site-subnav ul {         /* optional niceties */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-subnav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.site-subnav a {
+  text-decoration: none;
+}
+.site-subnav a:hover {
+  text-decoration: underline;
+}
+
