@@ -24,8 +24,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   Learning about solving the things in Elixir, Ruby, TypeScript and Rust.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "crustyrustacean.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username:
+twitter_username: crustyrustacean
 github_username: crustyrustacean
+version: 0.2.0
 
 # Build settings
 theme: minima
