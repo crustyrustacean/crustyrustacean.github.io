@@ -1,5 +1,4 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
 @import "minima";
@@ -26,4 +25,98 @@
 .site-subnav a:hover {
   text-decoration: underline;
 }
+
+/* Contact form: responsive polish */
+.contact-form {
+  max-width: 640px;         /* comfortable read width */
+  margin: 1.5rem auto;      /* center the form */
+  padding: 0 1rem;          /* side padding on narrow screens */
+}
+
+.contact-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  line-height: 1.3;
+}
+
+/* Inputs */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: .6rem .7rem;
+  font-size: 1rem;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+/* Better focus & accessibility */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #2a7ae2;
+  box-shadow: 0 0 0 3px rgba(42,122,226,.15);
+}
+
+/* Button */
+.contact-form button {
+  background: #2a7ae2;      /* Minima link color */
+  color: #fff;
+  border: 0;
+  padding: .6rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background: #1756a9;
+}
+
+/* Tiny screens: give breathing room, full-width button */
+@media (max-width: 400px) {
+  .contact-form {
+    padding: 0 .75rem;
+  }
+  .contact-form button {
+    width: 100%;
+  }
+}
+
+/* Medium+ screens: align labels/inputs neatly, add a subtle grid if you want two columns later */
+@media (min-width: 640px) {
+  .contact-form .form-group {
+    margin-bottom: 1.1rem;
+  }
+}
+
+/* Optional: validation hints */
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+  border-color: #d33;
+}
+.contact-form .hint {
+  display: block;
+  color: #666;
+  font-size: .9rem;
+  margin-top: .35rem;
+}
+
+/* Inline status and honeypot */
+.form-status {
+  margin-top: .75rem;
+  font-size: .95rem;
+  color: #333;
+}
+.hp {
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+
 
