@@ -26,12 +26,16 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "crustyrustacean.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: crustyrustacean
 github_username: crustyrustacean
-version: 0.4.0
+version: 0.5.0
 header_pages:
   - about.markdown
   - contact.markdown
   - projects.markdown
   - resources.markdown
+timezone: America/Vancouver
+show_excerpts: true
+reading_wpm: 200
+excerpt_separator: "<!--more-->"
 
 # Build settings
 theme: minima
