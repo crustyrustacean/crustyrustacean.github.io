@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Essence of Templating with Tera"
-date:   2025-08-18 06:30:00 -0700
+date:   2024-11-29 06:00:00 -0700
 description: "An introduction to important concepts in using the Tera crate for web templating."
 categories: [Advanced Guides]
 tags: [rust, templating, tera]
