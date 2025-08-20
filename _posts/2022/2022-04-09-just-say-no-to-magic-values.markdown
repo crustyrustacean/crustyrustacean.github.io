@@ -7,7 +7,7 @@ categories: [Beginner Guides]
 tags: [rust, constants]
 ---
 
-The journey to proficiency in Rust continues. In a [Previous article]({% post_url 2022-04-05-baby-steps-with-rust %}), I provided a brief overview of how to get started with Rust by creating a tiny cliche of a program that displays the message, “Hello, World!”.
+The journey to proficiency in Rust continues. In a [Previous article]({% post_url 2022/2022-04-05-baby-steps-with-rust %}), I provided a brief overview of how to get started with Rust by creating a tiny cliche of a program that displays the message, “Hello, World!”.
 
 This article will focus on a specific language aspect, namely constants.
 

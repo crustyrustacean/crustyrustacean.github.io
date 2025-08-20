@@ -5,6 +5,7 @@ date:   2024-11-29 06:00:00 -0700
 description: "An introduction to important concepts in using the Tera crate for web templating."
 categories: [Advanced Guides]
 tags: [rust, templating, tera]
+render_with_liquid: false
 ---
 
 For better or worse, we are in an era of client side rendered, JavaScript heavy web applications. Template rendered web sites are not in vogue as they once were. However, they still have their place and it's useful to know how to make them. Can we do a template driven web site in Rust? Why yes, yes we can. There are many crates in the Rust ecosystem, but today I'd like to take a look at Tera.

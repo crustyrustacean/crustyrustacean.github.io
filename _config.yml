@@ -26,7 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "crustyrustacean.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: crustyrustacean
 github_username: crustyrustacean
-version: 0.6.1
+version: 0.7.0
 header_pages:
   - about.markdown
   - contact.markdown
@@ -44,8 +44,8 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
-paginate: 
-paginate_path:
+paginate: 4
+paginate_path: "/page:num"
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

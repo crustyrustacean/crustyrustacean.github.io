@@ -11,7 +11,7 @@ Before I continue in my series of articles on learning Rust, I’d like to remin
 
 <!--more-->
 
-Enough navel-gazing, let’s get on with some more foundational concepts in Rust. These building blocks are crucial. I know, speaking for myself, I’m in a terrible race to understand the higher-order concepts, because those are what make you able to build things other than toy software. The truth is that higher-order concepts are meaningless without solid footings to rest on. I’ve already written a short piece about getting started with a [Hello World]({% post_url 2022-04-05-baby-steps-with-rust %}) app as well as a short piece on the advantages of [Constants]({% post_url 2022-04-09-just-say-no-to-magic-values %}), so now I’ll turn to comments, variables, mutability, and shadowing.
+Enough navel-gazing, let’s get on with some more foundational concepts in Rust. These building blocks are crucial. I know, speaking for myself, I’m in a terrible race to understand the higher-order concepts, because those are what make you able to build things other than toy software. The truth is that higher-order concepts are meaningless without solid footings to rest on. I’ve already written a short piece about getting started with a [Hello World]({% post_url 2022/2022-04-05-baby-steps-with-rust %}) app as well as a short piece on the advantages of [Constants]({% post_url 2022/2022-04-09-just-say-no-to-magic-values %}), so now I’ll turn to comments, variables, mutability, and shadowing.
 
 ### Comments
 
