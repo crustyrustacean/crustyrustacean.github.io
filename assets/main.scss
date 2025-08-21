@@ -121,5 +121,19 @@
   left: -9999px !important;
 }
 
+mark { background: #fff2a8; padding: 0 .1em; }
+
+.site-search { margin: .75rem 0 1.25rem; }
+.site-search input[type="search"] {
+  padding: .45rem .6rem; border: 1px solid #ccc; border-radius: 6px; width: 14rem;
+}
+.site-search button {
+  margin-left: .4rem; padding: .45rem .7rem; border: 0; border-radius: 6px;
+  background: #2a7ae2; color: #fff; cursor: pointer;
+}
+.site-search button:hover { background: #1756a9; }
+
+
+
 
 

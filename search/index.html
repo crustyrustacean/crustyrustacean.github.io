@@ -1,0 +1,101 @@
+---
+layout: default
+title: Search
+permalink: /search/
+---
+
+<h1>Search</h1>
+
+<input id="q" type="search" placeholder="Type to search…" autofocus>
+<p id="count" aria-live="polite"></p>
+<ul id="results" class="post-list"></ul>
+
+<!-- elasticlunr (tiny full-text search library) -->
+<script src="https://unpkg.com/elasticlunr/elasticlunr.js"></script>
+
+<script>
+(function() {
+  const input  = document.getElementById('q');
+  const count  = document.getElementById('count');
+  const list   = document.getElementById('results');
+  const jsonURL = '{{ "/search.json" | relative_url }}';
+
+  const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const normalize = s => s.toLowerCase();
+
+  // Build index
+  let idx, docs = [];
+  fetch(jsonURL, { cache: 'no-store' })
+    .then(r => r.json())
+    .then(data => {
+      docs = data;
+      idx = elasticlunr(function () {
+        this.setRef('url');
+        this.addField('title');
+        this.addField('content');
+        this.addField('tags');
+        this.addField('categories');
+        // Optional: tweak pipeline (defaults are fine)
+      });
+      data.forEach(d => idx.addDoc(d));
+      // Seed from ?q=
+      const qParam = new URLSearchParams(location.search).get('q') || '';
+      if (qParam) input.value = qParam;
+      render(input.value);
+    });
+
+  function highlight(text, terms) {
+    if (!terms.length) return text;
+    const pattern = new RegExp('(' + terms.map(t => escRe(t)).join('|') + ')', 'ig');
+    return text.replace(pattern, '<mark>$1</mark>');
+  }
+
+  function snippet(content, terms, len = 160) {
+    if (!terms.length) return content.slice(0, len) + (content.length > len ? '…' : '');
+    const low = normalize(content);
+    const term = terms.find(t => low.includes(normalize(t)));
+    if (!term) return content.slice(0, len) + (content.length > len ? '…' : '');
+    const i = low.indexOf(normalize(term));
+    const start = Math.max(0, i - Math.floor(len/2));
+    const raw = content.slice(start, start + len);
+    return (start>0?'…':'') + raw + (start + len < content.length ? '…' : '');
+  }
+
+  function render(q) {
+    const query = (q || '').trim();
+    if (!idx || !query) { list.innerHTML = ''; count.textContent = ''; return; }
+
+    // elasticlunr supports multi-term queries; keep it simple
+    const results = idx.search(query, {
+      fields: { title: {boost: 5}, content: {boost: 1}, tags: {boost: 3}, categories: {boost: 2} },
+      expand: true
+    });
+
+    const terms = query.split(/\s+/).filter(Boolean);
+    count.textContent = `${results.length} result${results.length !== 1 ? 's' : ''}`;
+
+    list.innerHTML = results.slice(0, 50).map(r => {
+      const doc = docs.find(d => d.url === r.ref) || {};
+      const snip = snippet(doc.content || '', terms, 180);
+      return `
+        <li>
+          <span class="post-meta">${doc.date || ''}</span>
+          <h3>
+            <a class="post-link" href="${doc.url}?q=${encodeURIComponent(query)}">
+              ${highlight(doc.title || '', terms)}
+            </a>
+          </h3>
+          <p>${highlight(snip, terms)}</p>
+        </li>
+      `;
+    }).join('');
+  }
+
+  // Debounce typing
+  let t;
+  input.addEventListener('input', () => {
+    clearTimeout(t);
+    t = setTimeout(() => render(input.value), 120);
+  });
+})();
+</script>
