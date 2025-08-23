@@ -3,7 +3,7 @@ layout: post
 title:  "Building Something: Saying Hello"
 date:   2022-05-04 06:00:00 -0700
 description: "A simple project in Rust, greet a person"
-categories: [Beginner Guides]
+categories: [How-To]
 tags: [rust, "control flow", "loops"]
 ---
 
