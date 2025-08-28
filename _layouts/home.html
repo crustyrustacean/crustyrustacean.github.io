@@ -23,7 +23,7 @@ layout: default
 
         <li>
           <span class="post-meta">
-            {{ post.date | date: date_format }}
+            {{ post.date | date: date_format }} {% if post.updated_date %} · Updated {{ post.updated_date | date: date_format }} {% endif %}
             · {{ words }} words · {{ mins }} min read
           </span>
           <h3>
