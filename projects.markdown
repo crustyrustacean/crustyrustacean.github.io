@@ -22,6 +22,6 @@ Code is here:
 
 From the very day I discovered Pavex I asked the question, can it run on Shuttle?
 
-The answer is a resounding yes. After much trial, error, and sweat, and also leavning heavily on [giants](https://blog.alexanderjophus.dev/posts/rust-full-stack-2/), it's possible:
+The answer is a resounding yes. After much trial, error, and sweat, and also leaning heavily on [giants](https://blog.alexanderjophus.dev/posts/rust-full-stack-2/), it's possible:
 
 [Pavex on Shuttle](https://github.com/crustyrustacean/pvx-on-shuttle)
