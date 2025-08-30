@@ -25,3 +25,11 @@ From the very day I discovered Pavex I asked the question, can it run on Shuttle
 The answer is a resounding yes. After much trial, error, and sweat, and also leaning heavily on [giants](https://blog.alexanderjophus.dev/posts/rust-full-stack-2/), it's possible:
 
 [Pavex on Shuttle](https://github.com/crustyrustacean/pvx-on-shuttle)
+
+## Axum Template (for Shuttle)
+
+I've built an opinionated starting template for Axum API projects. Using [Cargo Generate](https://cargo-generate.github.io/cargo-generate/index.html) you can use my template to rapidly spin up a starting point and embelish it with your own API logic.
+
+Code is here:
+
+[Shuttle Template Axum](https://github.com/crustyrustacean/shuttle-template-axum)
