@@ -33,3 +33,9 @@ I've built an opinionated starting template for Axum API projects. Using [Cargo 
 Code is here:
 
 [Shuttle Template Axum](https://github.com/crustyrustacean/shuttle-template-axum)
+
+I also built a variation of this template adds HTML templating with [Tera](https://keats.github.io/tera/) and static asset serving via `ServeDir` from [tower-http](https://crates.io/crates/tower-http). Static assets such as CSS, images, and JavaScript can be served up.
+
+Code is here:
+
+[Shuttle Template Axum Tera](https://github.com/crustyrustacean/shuttle-template-axum-tera)
