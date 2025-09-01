@@ -39,3 +39,11 @@ I also built a variation of this template adds HTML templating with [Tera](https
 Code is here:
 
 [Shuttle Template Axum Tera](https://github.com/crustyrustacean/shuttle-template-axum-tera)
+
+## Fun with Nom
+
+In late 2023 and early 2024, I developed an odd obsession with the [nom](https://crates.io/crates/nom) crate. I built an API which, in theory, might turn into something to count words. Dusted it off and updated it with my Axum API template. Also meant it to be a jumping off point for those learning with Nom, as many of the resources I found were quite outdated.
+
+Code is here:
+
+[Fun with Nom](https://github.com/crustyrustacean/fun-with-nom)
