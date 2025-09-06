@@ -17,9 +17,9 @@ Rust is the programming language which enables everyone to create reliable and e
 
 What are these rules?
 
-I went through the basics in [The Memory Doesn't Remain]({% post_url 2022/2022-07-14-the-memory-doesnt-remain %}), so I won't repeat them here. You can try to learn this things individually, perhaps in combination, but the result is what many refer to as "fighting the borrow checker".
+I went through the basics in [The Memory Doesn't Remain]({% post_url 2022/2022-07-14-the-memory-doesnt-remain %}), so I won't repeat them here. You can try to learn these things individually, perhaps in combination, but the result is what many refer to as "fighting the borrow checker".
 
-What if there was another way, some guiding principle you could follow that *embodies* the rules.
+What if there was another way, some guiding principle you could follow that adds texture and makes the rules easier to *reason about*?
 
 ## Enter Aliasing Xor Mutability
 
