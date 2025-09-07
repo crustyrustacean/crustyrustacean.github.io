@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Learning about solving the things mostly in Rust...mostly...
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "crustyrustacean.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: crustyrustacean
+twitter_username: 
 github_username: crustyrustacean
 version: 0.10.5
 header_pages:
