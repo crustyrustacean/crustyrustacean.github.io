@@ -47,3 +47,11 @@ In late 2023 and early 2024, I developed an odd obsession with the [nom](https:/
 Code is here:
 
 [Fun with Nom](https://github.com/crustyrustacean/fun-with-nom)
+
+## Hyper-Actor Template (for Shuttle)
+
+In the spring, my Rust instructor from ZTM inspired me to have a look at actors. They may be a poor architectural choice for Rust, but it was educational to work through some concepts, including some basic Rust concurrency building blocks. I built a frankenstein thing leveraging the `hyper` crate. It's a basis for a simple web API, with some rudimentary starting actors, that could be the basis of something bigger. I have this sort of silly dream of making something that's automated that can run tasks and otherwise do my bidding. This might be the basis...someday.
+
+Code is here:
+
+[Shuttle Template Hyper Actor](https://github.com/crustyrustacean/shuttle-template-hyper-actor)
