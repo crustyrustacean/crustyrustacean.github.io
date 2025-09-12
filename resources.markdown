@@ -21,3 +21,9 @@ This is the resources page. It's a little lonely right now, but it will grow ove
 *Rust Ecosystem*
 
 - [crates.io](https://crates.io)
+
+*Rust Community*
+
+- [This Week in Rust](https://this-week-in-rust.org/)
+- [Sylvain Kerkour](https://kerkour.com/)
+- [Luca Palmieri](https://lpalmieri.com/)
