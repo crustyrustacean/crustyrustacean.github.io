@@ -23,10 +23,10 @@ email: crusty.rustacean@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Learning about solving the things mostly in Rust...mostly...
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "crustyrustacean.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://crustyrustacean.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username: crustyrustacean
-version: 0.11.2
+version: 0.11.3
 header_pages:
   - music.markdown
   - photography.markdown
