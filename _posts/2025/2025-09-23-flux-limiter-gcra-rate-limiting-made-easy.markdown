@@ -15,6 +15,14 @@ Rate limiting is like being a bouncer at a popular nightclub – you need to con
 
 Today, I want to share my journey building **flux-limiter**, a high-performance rate limiting library in Rust that uses the Generic Cell Rate Algorithm (GCRA). Whether you're a seasoned developer or just getting started with rate limiting, this post will walk you through the concepts and implementation details.
 
+# Why Did I Build this Thing?
+
+The simple fact is, I was looking at other rate limiters, namely `governor` and it's associated `tower-governor` incarnation for Axum, and had a great deal of trouble understanding them. I found myself longing for something simple that made sense, based on clear criteria. A challenge I've found in using Rust libraries is the *level of abstraction*. It's really challenging, at first glance, for a beginner to understand *how* to use them because they assume you think quickly in terms of abstraction.
+
+I need to be hit in the face.
+
+I figured *maybe* others might need that as well.
+
 ## What is Rate Limiting and Why Do We Need It?
 
 Imagine you're running a popular API that provides weather data. Without any controls, a single client could make thousands of requests per second, potentially:
@@ -320,6 +328,8 @@ flux-limiter demonstrates that you can build high-performance, mathematically so
 If you're interested in the full implementation, check out the [repository](https://github.com/crustyrustacean/flux-limiter). The code is MIT licensed and production-ready.
 
 Rate limiting doesn't have to be complicated – sometimes the most elegant solution is also the most effective.
+
+That's not to say there isn't work still left to do. The cleanup system is perhaps overly simplistic, it could stand for some more nuanced refinement. Also, there is no quota strategy for replenishment, as the `governor` crate has. You have to start somewhere though, so there you have it!
 
 ---
 
