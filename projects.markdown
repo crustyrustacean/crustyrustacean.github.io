@@ -30,7 +30,7 @@ The answer is a resounding yes. After much trial, error, and sweat, and also lea
 
 Pavex is still in active development, so it's missing still a few essentials. I built a library which leverages the `tera` crate for HTML templating.
 
-[Pavex HTML Template](https://github.com/crustyrustacean/pvx_html_template)
+[FLux HTML Template](https://github.com/crustyrustacean/flux_html_template)
 
 Just to be clear, this library is in no way affiliated with the main Pavex project.
 
@@ -38,7 +38,7 @@ Just to be clear, this library is in no way affiliated with the main Pavex proje
 
 Pavex also lacks a means of serving static assets, such as CSS and JavaScript. I built a library to achieve this.
 
-[Pavex Static Files](https://github.com/crustyrustacean/pvx_static_files)
+[Flux Static Files](https://github.com/crustyrustacean/flux_static_files)
 
 ## Axum Template (for Shuttle)
 
