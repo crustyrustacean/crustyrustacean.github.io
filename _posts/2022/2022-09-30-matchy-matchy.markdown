@@ -3,7 +3,7 @@ layout: post
 title:  "Matchy Matchy"
 date:   2022-09-30 06:00:00 -0700
 description: "An introduction to the option type in Rust"
-categories: [Beginner Guides]
+categories: [intermediate-guides]
 tags: [rust, match]
 ---
 

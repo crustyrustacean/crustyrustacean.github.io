@@ -3,7 +3,7 @@ layout: post
 title:  "The Option Type: Is it Something, or Nothing?"
 date:   2022-08-13 06:00:00 -0700
 description: "An introduction to the option type in Rust"
-categories: [Intermediate Guides]
+categories: [intermediate-guides]
 tags: [rust, "option type"]
 ---
 

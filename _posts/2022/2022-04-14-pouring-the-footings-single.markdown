@@ -3,7 +3,7 @@ layout: post
 title:  "Pouring the Footings: Single Value Data Types"
 date:   2022-04-12 06:00:00 -0700
 description: "An introduction to the fundamental, foundational single value data types in Rust."
-categories: [Beginner Guides]
+categories: [beginner-guides]
 tags: [rust, "data types", "single value"]
 ---
 

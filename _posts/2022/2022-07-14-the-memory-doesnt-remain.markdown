@@ -3,7 +3,7 @@ layout: post
 title:  "The Memory Doesn't Remain"
 date:   2022-07-14 06:00:00 -0700
 description: "An introduction to memory management in Rust."
-categories: [Intermediate Guides]
+categories: [intermediate-guides]
 tags: [rust, memory, ownership, borrowing]
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title:  "Decisions, Decisions"
 date:   2022-04-27 06:00:00 -0700
 description: "An introduction to basic control flow in Rust."
-categories: [Beginner Guides]
+categories: [beginner-guides]
 tags: [rust, "control flow", "if else"]
 ---
 

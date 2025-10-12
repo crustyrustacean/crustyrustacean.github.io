@@ -3,7 +3,7 @@ layout: post
 title:  "Pouring the Footings: Compound Data Types"
 date:   2022-04-18 06:00:00 -0700
 description: "An introduction to the compound data types in Rust."
-categories: [Beginner Guides]
+categories: [beginner-guides]
 tags: [rust, "data types", compound]
 ---
 

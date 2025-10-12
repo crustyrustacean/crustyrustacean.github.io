@@ -3,7 +3,7 @@ layout: post
 title:  "Method to the Madness"
 date:   2022-07-01 06:00:00 -0700
 description: "An introduction to the method syntax in Rust."
-categories: [Beginner Guides]
+categories: [beginner-guides]
 tags: [rust, methods]
 ---
 

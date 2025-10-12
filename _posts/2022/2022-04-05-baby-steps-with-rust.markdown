@@ -3,7 +3,7 @@ layout: post
 title:  "Baby Steps with Rust"
 date:   2022-04-05 06:00:00 -0700
 description: "An introduction to the Rust programming language"
-categories: [Beginner Guides]
+categories: [beginner-guides]
 tags: [rust, "hello world"]
 ---
 

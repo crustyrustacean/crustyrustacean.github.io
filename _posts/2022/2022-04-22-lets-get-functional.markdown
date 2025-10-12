@@ -3,7 +3,7 @@ layout: post
 title:  "Let's Get Functional"
 date:   2022-04-22 06:00:00 -0700
 description: "An introduction to functions in Rust."
-categories: [Beginner Guides]
+categories: [beginner-guides]
 tags: [rust, functions]
 ---
 

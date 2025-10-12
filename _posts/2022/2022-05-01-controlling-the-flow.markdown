@@ -3,7 +3,7 @@ layout: post
 title:  "Controlling the Flow"
 date:   2022-05-01 06:00:00 -0700
 description: "An introduction to basic control flow in Rust."
-categories: [Beginner Guides]
+categories: [beginner-guides]
 tags: [rust, "control flow", "loops"]
 ---
 

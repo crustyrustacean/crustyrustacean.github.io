@@ -3,7 +3,7 @@ layout: post
 title:  "Bigger Building Blocks: Introduction to the Enum Type"
 date:   2022-05-21 06:00:00 -0700
 description: "An introduction to Rust's enum data type"
-categories: [Beginner Guides]
+categories: [beginner-guides]
 tags: [rust, enums]
 ---
 

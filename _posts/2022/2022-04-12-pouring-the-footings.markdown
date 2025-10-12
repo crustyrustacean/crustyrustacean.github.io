@@ -3,7 +3,7 @@ layout: post
 title:  "Pouring the Footings"
 date:   2022-04-12 06:00:00 -0700
 description: "An introduction to the fundamental, foundational concepts in Rust, including variables, mutability, and shadowing."
-categories: [Beginner Guides]
+categories: [beginner-guides]
 tags: [rust, comments, variables, mutability, shadowing]
 ---
 

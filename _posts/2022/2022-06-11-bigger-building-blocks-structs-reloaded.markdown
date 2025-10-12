@@ -3,7 +3,7 @@ layout: post
 title:  "Bigger Building Blocks: Structs Reloaded"
 date:   2022-05-21 06:00:00 -0700
 description: "More that you can do with the struct type"
-categories: [Beginner Guides]
+categories: [berginner-guides]
 tags: [rust, structs]
 ---
 

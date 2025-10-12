@@ -3,7 +3,7 @@ layout: post
 title:  "Just Say No to Magic Values"
 date:   2022-04-09 06:00:00 -0700
 description: "An introduction to constants in Rust."
-categories: [Beginner Guides]
+categories: [beginner-guides]
 tags: [rust, constants]
 ---
 

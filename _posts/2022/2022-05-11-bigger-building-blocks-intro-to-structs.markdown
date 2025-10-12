@@ -3,7 +3,7 @@ layout: post
 title:  "Bigger Building Blocks: Intro to Structs"
 date:   2022-05-11 06:00:00 -0700
 description: "An introduction to Rust's struct data type"
-categories: [Beginner Guides]
+categories: [beginner-guides]
 tags: [rust, structs]
 ---
 
