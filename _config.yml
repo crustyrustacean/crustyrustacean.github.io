@@ -24,9 +24,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   Learning about solving the things mostly in Rust...mostly...
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://crusty-rustacean.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username:
+twitter_username: crustyrustacean
 github_username: crustyrustacean
-version: 0.11.11
+version: 0.12.0
 header_pages:
   - music.markdown
   - photography.markdown
@@ -38,6 +38,8 @@ timezone: America/Vancouver
 show_excerpts: true
 reading_wpm: 200
 excerpt_separator: "<!--more-->"
+imagesurl: "/img"
+thumbsurl: "/thumbs"
 google_analytics: "G-QCWV95QMKD"
 
 # Build settings
