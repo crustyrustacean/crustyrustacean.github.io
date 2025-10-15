@@ -26,7 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://crusty-rustacean.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: crustyrustacean
 github_username: crustyrustacean
-version: 0.12.1
+version: 25.10.14
 header_pages:
   - music.markdown
   - photography.markdown
